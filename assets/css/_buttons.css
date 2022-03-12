@@ -12,6 +12,7 @@
 
   border: none;
   border-radius: var(--border-radius); 
+  transition: ease-in-out 200ms;
 }
 
 .btn-primary {
@@ -20,8 +21,7 @@
 }
 
 .btn-primary:hover {
-  opacity: .9;
-  transition: ease-in-out 100ms;
+  background-color: var(--primary-color-hover);
 }
 
 .btn-block {

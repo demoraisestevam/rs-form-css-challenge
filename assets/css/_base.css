@@ -14,10 +14,11 @@ body {
 a {
   color: var(--primary-color);
   text-decoration: none;
+  transition: ease-in-out 200ms;
 }
 
 a:hover {
-  opacity: .9;
+  color: var(--primary-color-hover)
 }
 
 label {
