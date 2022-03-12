@@ -61,30 +61,30 @@ form + a {
   outline: none;
 }
 
-.input-group input[type="email"],
-.input-group input[type="password"] {
+.input-email input,
+.input-password input {
   padding-left: 2.65rem;
   background-repeat: no-repeat;
   background-position: .75rem center;
 }
 
-.input-group input[type=email] {
+.input-email input {
   background-image: url('../images/mail.svg');
 }
 
-.input-group input[type=email]:focus {
+.input-email input:focus {
   background-image: url('../images/mail-focus.svg');
 }
 
-.input-group input[type=password] {
+.input-password input {
   background-image: url('../images/lock.svg');
 }
 
-.input-group input[type=password]:focus {
+.input-password input:focus {
   background-image: url('../images/lock-focus.svg');
 }
 
-.input-group input[type=password] + button {
+.input-password input + button {
   position: absolute;
   bottom: 0;
   right: 0;
