@@ -4,55 +4,65 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login | Camp.in</title>
+  <title>Login | camp.in</title>
+  <link rel="icon" href="assets/images/favicon.ico"/>
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
-  
-  <!-- 
-    Desafio: https://app.rocketseat.com.br/discover/challenges/login-form-css
-   -->
 </head>
 <body>
+  <header>
+    <a href="#">
+      <img src="assets/images/logo.svg" alt="Logo de Camp.in">
+    </a>
+  </header>
+
   <main>
-    <header>
-      <a href="#">
-        <img src="assets/images/logo.svg" alt="Logo de Camp.in">
-      </a>
-    </header>
-
     <section>
-      <h1>Faça seu login</h1>
+      
+      <div class="content-box">
 
-      <form action="#" method="post">
-        <fieldset>
-          <legend>Entre com suas informações de cadastro.</legend>
-  
-          <div class="input-group" data-status="">
-            <label for="#email">E-mail</label>
-            <input type="email" id="email" name="email" placeholder="Digite seu e-mail">
-            <span>Message</span>
-          </div>
+        <h1 class="title-log-in">Faça seu login</h1>
 
-          <div class="input-group" data-status="">
-            <label for="#pass">Senha</label>
-            <input type="pass" id="pass" name="pass" placeholder="Digite sua senha">
-            <span>Message</span>
-          </div>
-          
-          <div class="form-options">
-            <div>
-              <input type="checkbox" id="remember" name="remember" >
-              <label for="remember">Lembre-me</label>
+        <form action="#" method="post">
+          <fieldset>
+            <legend>Entre com suas informações de cadastro.</legend>
+    
+            <div class="input-group input-email">
+              <label>
+                E-mail
+                <input type="email" id="email" name="email" placeholder="Digite seu e-mail">
+              </label>
             </div>
-            <a href="#">Esqueci minha senha</a>
-          </div>
 
-        </fieldset>
-      </form>
-      <a href="#">Não tem uma conta? <strong>Registre-se</strong></a>
+            <div class="input-group input-password">
+              <label>Senha
+                <input type="password" id="password" name="password" placeholder="Digite sua senha">
+                <button type="button">Mostrar Senha</button>
+              </label>
+            </div>
+            
+            <div class="form-options">
+              <div class="input-checkbox">
+                <input type="checkbox" id="remember" name="remember" >
+                <label for="remember">Lembre-me</label>
+              </div>
+              <a href="#">Esqueci minha senha</a>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block">Entrar</button>
+
+          </fieldset>
+        </form>
+
+        <a href="#">Não tem uma conta? <strong>Registre-se</strong></a>
+
+      </div>
+
     </section>
+
   </main>
+
 </body>
 </html>

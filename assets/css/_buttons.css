@@ -1,0 +1,30 @@
+.btn {
+  display: inline-block;
+  padding: 1rem 1.25rem;
+
+  font-weight: 600;
+  font-size: 1rem;
+  letter-spacing: 1.5;
+  text-align: center;
+  text-transform: uppercase;
+
+  cursor: pointer;
+
+  border: none;
+  border-radius: var(--border-radius); 
+}
+
+.btn-primary {
+  color: #473404;
+  background-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+  opacity: .9;
+  transition: ease-in-out 100ms;
+}
+
+.btn-block {
+  display: block;
+  width: 100%;
+}

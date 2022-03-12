@@ -1,0 +1,125 @@
+form fieldset {
+  border: none;
+}
+
+form legend {
+  font-weight: 500;
+  margin-bottom: 1.75rem;
+}
+
+form + a {
+  text-align: center;
+  display: block;
+  margin-top: .85rem;
+}
+
+.form-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.form-options a {
+  line-height: 0;
+  font-size: .9rem;
+  font-weight: 600;
+}
+
+/* Inputs */
+.input-group {
+  margin-bottom: 1rem;
+}
+
+.input-group * {
+  display: block;
+  width: 100%;
+}
+
+.input-group label {
+  position: relative;
+}
+
+.input-group input {
+  margin: .175rem 0;
+  padding: auto .85rem;
+  height: 3rem;
+  
+  background-color: transparent;
+  color: #A9AFB9;
+
+  font-weight: 400;
+  font-size: .9rem;
+
+  border: var(--border);
+  border-radius: var(--border-radius);
+}
+
+.input-group input:focus {
+  color: #fff;
+  border-color: var(--primary-color);
+  outline: none;
+}
+
+.input-group input[type="email"],
+.input-group input[type="password"] {
+  padding-left: 2.65rem;
+  background-repeat: no-repeat;
+  background-position: .75rem center;
+}
+
+.input-group input[type=email] {
+  background-image: url('../images/mail.svg');
+}
+
+.input-group input[type=email]:focus {
+  background-image: url('../images/mail-focus.svg');
+}
+
+.input-group input[type=password] {
+  background-image: url('../images/lock.svg');
+}
+
+.input-group input[type=password]:focus {
+  background-image: url('../images/lock-focus.svg');
+}
+
+.input-group input[type=password] + button {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+
+  height: 3rem;
+  width: 3rem;
+
+  background: url('../images/eye.svg') transparent no-repeat center;
+  color: transparent;
+
+  border: none;
+  border-radius: var(--border-radius);
+
+  cursor: pointer;
+}
+
+.input-checkbox {
+  display: inline-flex;
+  align-items: center;
+}
+
+.input-checkbox input {
+  all: unset;
+  border: var(--border);
+  border-radius: var(--border-radius);
+  width: 20px;
+  height: 20px;
+}
+
+.input-checkbox input:checked {
+  background: url('../images/check.svg') var(--primary-color) no-repeat center center;
+  border-color: transparent;
+}
+
+.input-checkbox label {
+  padding-left: .4rem;
+  font-size: .9rem;
+}

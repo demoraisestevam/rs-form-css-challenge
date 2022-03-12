@@ -5,7 +5,17 @@
 }
 
 body {
+  position: relative;
   font-family: var(--font-family);
+  background-color: var(--background);
+  color: var(--text-base);
 }
 
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
 
+a:hover {
+  opacity: .9;
+}
